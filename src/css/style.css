@@ -105,8 +105,8 @@ header .navbar li {
 }
 
 .navbar li .link.button:hover {
-color: #fff;
-background: #ffffff50;
+	color: #fff;
+	background: #ffffff50;
 }
 
 
@@ -259,11 +259,13 @@ main .clients {
 }
 
 .clients-text .client {
-	width: 100%;
 	padding: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
-.client .emily, .thomas, .jennie {
+
+.client img {
 	width: 120px;
 	height: 120px;
 	object-fit: cover;
@@ -498,8 +500,8 @@ footer .navbar-footer {
 		display: flex;
 		flex-direction: column;
 		padding: 30px 100px;
-    	bottom: 60px;
-    	line-height: 30px;
+    		bottom: 60px;
+    		line-height: 30px;
 	}
 
 	main .clients .clients-text {
@@ -518,7 +520,7 @@ footer .navbar-footer {
 
 /******************************** Responsive ********************************/
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
 	body {
 		font-size: 32px;
 	}
@@ -551,11 +553,13 @@ footer .navbar-footer {
 
 	.text .learn-more1::after {	
 		width: 200px;
+		height: 10px;
 		margin: -10px auto
 	}
 	
 	.text .learn-more2::after {	
 		width: 200px;
+		height: 10px;
 		margin: -10px auto
 	}
 

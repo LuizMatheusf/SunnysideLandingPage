@@ -113,7 +113,7 @@ header .navbar li {
 header .hero .hero-text {
 	text-align: center;
 	margin-top: 120px;
-	font-size: 72px;
+	font-size: 36px;
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
 	letter-spacing: 10px;
@@ -122,8 +122,7 @@ header .hero .hero-text {
 }
 
 .hero .hero-text .arrow-down {
-	margin-top: 120px;
-	
+	margin-top: 36px;
 }
 
 /******************************** About ********************************/
@@ -152,10 +151,12 @@ main .about {
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
 	color: hsl(212, 27%, 19%);
+	margin: auto;
 }
 
 .about .text p {
 	margin: 30px 0;
+	line-height: 22px;
 }
 
 .text .learn-more1, .learn-more2 {

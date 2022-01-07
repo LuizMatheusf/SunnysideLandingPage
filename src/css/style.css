@@ -122,7 +122,7 @@ header .hero .hero-text {
 }
 
 .hero .hero-text .arrow-down {
-	margin-top: 36px !important;
+	margin-top: 36px;
 }
 
 /******************************** About ********************************/

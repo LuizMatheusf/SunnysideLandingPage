@@ -156,7 +156,6 @@ main .about {
 
 .about .text p {
 	margin: 60px 0;
-	line-height: 35px;
 }
 
 .text .learn-more1, .learn-more2 {
@@ -276,8 +275,10 @@ main .clients {
 }
 
 .client .description {
+	width: 100%;
 	color: hsl(232, 10%, 55%);
-	margin: auto;
+	margin: 0 auto;
+	line-height: 35px;
 }
 
 .client .name {

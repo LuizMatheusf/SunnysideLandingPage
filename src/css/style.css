@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -113,7 +113,7 @@ header .navbar li {
 header .hero .hero-text {
 	text-align: center;
 	margin-top: 120px;
-	font-size: 36px !important;
+	font-size: 72px;
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
 	letter-spacing: 10px;
@@ -122,7 +122,8 @@ header .hero .hero-text {
 }
 
 .hero .hero-text .arrow-down {
-	margin-top: 36px;
+	margin-top: 120px;
+	
 }
 
 /******************************** About ********************************/
@@ -151,11 +152,11 @@ main .about {
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
 	color: hsl(212, 27%, 19%);
-	margin: 0 auto;
 }
 
 .about .text p {
-	margin: 60px 0;
+	margin: 30px 0;
+	line-height: 22px;
 }
 
 .text .learn-more1, .learn-more2 {
@@ -175,7 +176,7 @@ main .about {
 	margin-top: -7px;	
 	margin-left: -10px;
 	border-radius: 40px;
-	background: hsl(51, 100%, 60%);
+	background: hsla(50, 100%, 60%, 0.7);
 }
 
 .text .learn-more2::after {
@@ -183,10 +184,10 @@ main .about {
 	display: block;
 	height: 8px;
 	width: 140px;
-	margin-left: -10px;
 	margin-top: -7px;	
+	margin-left: -10px;
 	border-radius: 40px;
-	background: hsl(7, 99%, 70%);
+	background: hsl(7, 99%, 70%, 0.7);
 }
 
 /******************************** Services ********************************/
@@ -203,14 +204,16 @@ main .services {
 	position: relative;
 }
 
-.services-text img {
-	width: 100%;
+.services img {
+	display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .services-text .text {
 	position: absolute;
-	left: 0px;
-	bottom: 0px;
+
+	bottom: 30px;
 	padding: 30px;
 	text-align: center;
 }
@@ -231,6 +234,7 @@ main .services {
 }
 
 .services-text .text p {
+	line-height: 22px;
 	width: 70%;
 	margin: auto;
 }
@@ -254,7 +258,6 @@ main .clients {
 
 .clients .clients-text {
 	display: flex;
-	width: 80%;
 	margin: 70px auto;
 }
 
@@ -275,14 +278,13 @@ main .clients {
 }
 
 .client .description {
-	width: 100%;
 	color: hsl(232, 10%, 55%);
-	margin: 0 auto;
-	line-height: 35px;
+	line-height: 22px;
+	margin: 0 auto 70px;
 }
 
 .client .name {
-	margin: 70px auto 15px auto;
+	margin-top: auto;
 	font-size: 26px;
 	font-family: 'Fraunces', serif;
 	font-weight: 900;
@@ -357,10 +359,6 @@ footer .navbar-footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.navbar-footer ul {
-	padding: initial; 
 }
 
 .navbar-footer li {
@@ -503,8 +501,8 @@ footer .navbar-footer {
 		display: flex;
 		flex-direction: column;
 		padding: 30px 100px;
-    		bottom: 60px;
-    		line-height: 30px;
+    	bottom: 60px;
+    	line-height: 30px;
 	}
 
 	main .clients .clients-text {
@@ -514,6 +512,10 @@ footer .navbar-footer {
 	
 	 .clients .clients-text .client {
 		padding: 30px 0;
+	}
+
+	main .clients .description {
+		width: 50%;
 	}
 	
 	main .projects article {
@@ -550,6 +552,10 @@ footer .navbar-footer {
 		width: 80%;
 	}
 
+	.about .text p {
+		line-height: 42px;
+	}
+
 	.about .learn-more1, .learn-more2 {
 		font-size: 28px;
 	}
@@ -571,8 +577,14 @@ footer .navbar-footer {
 	}	
 	
 	.services .text p {
+		line-height: 42px;
 		width: 100%;
 	}	
+
+	main .clients .description {
+		line-height: 42px;
+		width: 90%;
+	}
 
 	main .projects .project-info a {
 		font-size: 28px;

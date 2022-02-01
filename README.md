@@ -5,7 +5,6 @@ foi um desafio do Front-end Mentor,
 apesar dela paracer visualmente simples, foi bastante
 desafiador. Deu para para aprender diversas técnicas
 e conhecer novos conceitos.
-
 ##
 
 Neste projeto integrei CSS grid e flexbox e também

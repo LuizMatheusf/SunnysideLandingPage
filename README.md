@@ -12,7 +12,7 @@ Neste projeto integrei CSS grid e flexbox e também
 adicionei legendas em algumas imagens que só aparecem
 quando sobrepassa o cursor do mouse nelas. O desafio
 era que a pagína tivesse visibilidade em apenas
-duas telas (1440px e 375px), Porém tomei como objetivo
+duas telas (1440px e 375px). Porém tomei como objetivo
 pessoal fazê-la responsiva na maior parte delas,
 como forma de aprendizagem em conceitos de responsivida.
  

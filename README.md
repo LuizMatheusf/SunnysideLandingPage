@@ -14,6 +14,6 @@ quando sobrepassa o cursor do mouse nelas. O desafio
 era que a pagína tivesse visibilidade em apenas
 duas telas (1440px e 375px), mas tomei como objetivo
 pessoal fazê-la responsiva na maior parte delas,
-como formas de aprendizagem em conceitos de responsivida.
+como forma de aprendizagem em conceitos de responsivida.
  
 

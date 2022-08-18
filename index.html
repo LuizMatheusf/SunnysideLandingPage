@@ -1,627 +1,283 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* End reset */
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
-
-body {
-	font-family: 'Barlow', serif;
-	font-size: 18px;
-	font-weight: 600;
-	min-width: 100vh;
-}
-
-/******************************** Hero ********************************/
-
-header {
-	background: url('../img/desktop/image-header.jpg') no-repeat center;
-	background-size: cover;
-	height: 100vh;	
-}
-
-header .menu {
-	margin: auto;
-	padding: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.menu .icon-menu {
-	display: none;
-}
-
-header .navbar li {
-	float: left;
-}
-
-.navbar li .link {
-	display: block;
-	padding: 15px 20px;
-	text-decoration: none;
-	color: #fff;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	transition: all 0.2 ease;
-}
-
-.navbar li .link:hover {
-	color: hsl(198, 62%, 26%);
-}
-	
-.navbar li .link.button {
-	color: hsl(232, 10%, 55%);
-	text-transform: uppercase;
-	background: #fff;
-	border-radius: 40px;
-	margin-left: 10px;
-	transition:  all 0.2s ease;
-}
-
-.navbar li .link.button:hover {
-	color: #fff;
-	background: #ffffff50;
-}
-
-
-header .hero .hero-text {
-	text-align: center;
-	margin-top: 120px;
-	font-size: 72px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	letter-spacing: 10px;
-	text-transform: uppercase;
-	color: #fff;
-}
-
-.hero .hero-text .arrow-down {
-	margin-top: 120px;
-	
-}
-
-/******************************** About ********************************/
-
-main .about {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: stretch;
-	width: 100%;
-}
-
-.about img {
-	width: 100%;
-}
-
-.about .text {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding: 50px;
-	color:  hsl(232, 10%, 55%);
-}
-
-.about .text h2 {
-	font-size: 50px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	color: hsl(212, 27%, 19%);
-}
-
-.about .text p {
-	margin: 30px 0;
-	line-height: 22px;
-}
-
-.text .learn-more1, .learn-more2 {
-	font-size: 18px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	color: hsl(212, 27%, 19%);
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-.text .learn-more1::after {
-	content: '';
-	display: block;
-	height: 8px;
-	width: 140px;
-	margin-top: -7px;	
-	margin-left: -10px;
-	border-radius: 40px;
-	background: hsla(50, 100%, 60%, 0.7);
-}
-
-.text .learn-more2::after {
-	content: '';
-	display: block;
-	height: 8px;
-	width: 140px;
-	margin-top: -7px;	
-	margin-left: -10px;
-	border-radius: 40px;
-	background: hsl(7, 99%, 70%, 0.7);
-}
-
-/******************************** Services ********************************/
-
-main .services {
-	display: flex;
-	align-items: center;
-	justify-content:center;
-	width: 100%;
-}
-
-.services .services-text {
-	width: 50%;
-	position: relative;
-}
-
-.services img {
-	display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.services-text .text {
-	position: absolute;
-
-	bottom: 30px;
-	padding: 30px;
-	text-align: center;
-}
-
-.services-text .text.green {
-	color: hsl(167, 40%, 24%);
-}
-
-.services-text .text.blue {
-	color: hsl(198, 62%, 26%);
-}
-
-.services-text .text h2 {
-	font-size: 32px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	margin-bottom: 30px;
-}
-
-.services-text .text p {
-	line-height: 22px;
-	width: 70%;
-	margin: auto;
-}
-
-/******************************** Clients ********************************/
-
-main .clients {
-	width: 100%;
-	padding: 120px 0px;
-	text-align: center;
-}
-
-.clients h2 {
-	font-size: 22px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	color:  hsl(232, 10%, 55%);
-	letter-spacing: 5px;	
-	text-transform: uppercase;
-}
-
-.clients .clients-text {
-	display: flex;
-	margin: 70px auto;
-}
-
-.clients-text .client {
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-}
-
-
-.client img {
-	width: 120px;
-	height: 120px;
-	object-fit: cover;
-	margin: 50px auto;
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-.client .description {
-	color: hsl(232, 10%, 55%);
-	line-height: 22px;
-	margin: 0 auto 70px;
-}
-
-.client .name {
-	margin-top: auto;
-	font-size: 26px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	color: hsl(212, 27%, 19%);
-}
-
-.client .profile {
-	color: hsl(210, 4%, 67%);
-}
-
-/******************************** Projects ********************************/
-
-main .projects article {
-	width: 100%;
-}
-
-.projects article {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-article .project {
-	position: relative;
-	overflow: hidden;
-}
-
-.project .project-info {
-	position: absolute;
-	bottom: -100px;
-	left: 0px;
-	width: 100%;
-	transition: all 0.4s ease;
-}
-
-.project-info a {
-	text-decoration: none;
-	display: block;
-	color: #fff;
-	background: rgba(0, 0, 0, 0.6);
-	padding: 30px;
-	font-size: 22px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-}
-
-article .project img {
-	width: 100%;
-	height: 100%;
-}
-
-.project img:hover~.project-info {
-	bottom: 0px;
-}
-
- .project-info:hover {
-	bottom: 0px;
-}
-
-/******************************** Footer ********************************/ 
-
-footer {
-	background:hsl(168, 36%, 60%);
-	text-align: center;
-	padding: 120px 0px;
-}
-
-footer .logo-footer {
-	width: 148px;
-	height: 32px;
-	margin: 30px 0px;
-}
-
-footer .navbar-footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.navbar-footer li {
-	margin: 0px 50px 50px ;
-	float: left;
-}
-
-.navbar-footer li .link {
-	text-decoration: none;
-	color: hsl(167, 40%, 24%);
-	font-size: 20px;
-	font-family: 'Fraunces', serif;
-	font-weight: 900;
-	transition: all 0.2 ease;
-}
-
-.navbar-footer li .link:hover {
-	color: #fff;
-}
-
-.icon-socialmedia {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.icon-socialmedia i {
-	padding: 0px 20px;
-	font-size: 32px;
-	color: hsl(167, 40%, 24%);
-}
-
-.icon-socialmedia i:hover {
-	color: #fff;
-}
-
-/******************************** Responsive ********************************/
-
-@media screen and (max-width: 770px) {
-
-	body {
-		width: 100%;
-	}
-
-	header {
-		background: url('../img/mobile/image-header.jpg') no-repeat center;	
-		background-size: cover;
-		height: 100vh;		
-	}
-
-	.menu .icon-menu {
-		cursor: pointer;
-		display: block;
-		padding: 10px;
-		transition:  all 0.2s ease;
-	}
-	
-	.menu .icon-menu:hover {
-		border-radius: 2px;
-		background-color: #ffffff50;
-	}
-
-	header .navbar.ativo {
-		display: block;		
-		background: #fff;
-		position: absolute;
-		left: 7.5%;
-		top: 100px;
-		width: 90vh;
-		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-		text-align: center;
-		padding: 30px 0px;		
-	}
-
-	header .navbar li {
-		float: none;
-	}
-	
-	.navbar li .link, .navbar li .link.button {
-		color: hsl(232, 10%, 55%);
-		display: inline-block;	
-	}
-
-	.navbar li .link.button {
-		margin: 15px auto;
-		color: hsl(212, 27%, 19%);
-		background: hsl(51, 100%, 60%);
-	}	
-
-	.navbar li .link.button:hover {
-		color: #fff;
-		background: hsl(51, 100%, 60%);
-	}
-	
-	.navbar .content {
-		display: none;
-	}
-	
-	.navbar.ativo .content {
-		display: block;
-	}
-
-	main .about {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-
-	main .about:first-child {
-		flex-direction: column-reverse;
-	}
-
-	.about .text {
-		height: 540px;
-		width: 50%;
-	}
-
-	.about .text p {
-		line-height: 35px;
-	}
-
-	.text .learn-more1::after {	
-		margin: -7px auto;
-	}
-	
-	.text .learn-more2::after {	
-		margin: -7px auto;	
-	}
-
-	main .services {
-		display: grid;
-		align-items: normal;
-		justify-content: normal;
-		flex-direction: column;
-	}
-	
-	.services .services-text {
-		width: 100%;
-	}
-	
-	.services-text img {
-		height: 100%;
-	}
-
-	.services-text .text {
-		display: flex;
-		flex-direction: column;
-		padding: 30px 100px;
-    	bottom: 60px;
-    	line-height: 30px;
-	}
-
-	main .clients .clients-text {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	 .clients .clients-text .client {
-		padding: 30px 0;
-	}
-
-	main .clients .description {
-		width: 50%;
-	}
-	
-	main .projects article {
-		grid-template-columns: 1fr 1fr;
-	}	
-}
-
-/******************************** Responsive ********************************/
-
-@media screen and (max-width: 540px) {
-	body {
-		font-size: 32px;
-	}
-
-	body  h2 {
-		font-size: 60px !important;
-	}
-	
-	body  h3 {
-		font-size: 45px !important;
-	}
-	
-	header .logo-header {
-		width: 200px;
-		height: 40px;
-	}
-	
-	header .icon-menu {
-		width: 32px;
-		height: 28px;
-	}
-
-	main .about .text {
-		width: 80%;
-	}
-
-	.about .text p {
-		line-height: 42px;
-	}
-
-	.about .learn-more1, .learn-more2 {
-		font-size: 28px;
-	}
-
-	.text .learn-more1::after {	
-		width: 200px;
-		height: 10px;
-		margin: -10px auto
-	}
-	
-	.text .learn-more2::after {	
-		width: 200px;
-		height: 10px;
-		margin: -10px auto
-	}
-
-	main .services .text {
-		bottom: 0px;
-	}	
-	
-	.services .text p {
-		line-height: 42px;
-		width: 100%;
-	}	
-
-	main .clients .description {
-		line-height: 42px;
-		width: 90%;
-	}
-
-	main .projects .project-info a {
-		font-size: 28px;
-	}
-	
-	footer .logo-footer {
-		width: 200px;
-		height: 40px;
-	}
-	
-	footer .icon-socialmedia i {
-		width: 28px;
-		height: 28px;
-	}	
-}
-
-/******************************** Responsive ********************************/
-
-@media screen and (max-width: 320px) {
-	header .hero .arrow-down {
-		margin-top: 90px !important;
-	}
-
-	main .services .text {
-		padding: 25px;
-	}
-
-	footer .navbar-footer li {
-		margin: 0 42px 42px;
-	}
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="https://kit.fontawesome.com/e42d496a37.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+    <link href='src/css/style.css' rel='stylesheet'>
+
+    <title>Sunnyside | LandingPage</title>
+</head>
+
+<body>
+    <header> 
+
+        <!-- Menu --> 
+        <section class="menu">
+            <a href="#">
+                <img
+                src="src/img/logo.svg"
+                alt="Logo Sunnyside"
+                class="logo-header"
+                />
+            </a>
+            
+            <nav class="navbar">
+                <ul class="content">
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">Projects</a></li>
+                <li><a href="#" class="link button">Contact</a></li>
+                </ul>        
+            </nav>
+            
+            <img
+                src="src/img/icon-hamburger.svg"
+                alt="menu"
+                class="icon-menu"
+            />
+        </section>
+
+        <!-- Hero -->  
+        <section  class="hero">
+
+            <div class="hero-text">       
+                <h1>We are Creative</h1>
+                
+                <img
+                src="src/img/icon-arrow-down.svg"
+                alt="Seta para baixo"
+                class="arrow-down"
+                />
+            </div>
+        </section>
+    </header> 
+    
+    <main>
+
+        <!-- About -->
+        <section class="about">
+            
+            <article class="text">
+                <h2>Transform your brand</h2>
+                
+                <p>We are a full-service creative agency specializing in helping brands grow fast. 
+                Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    
+                <a href="#" class="learn-more1">Learn more</a>     
+            </article>
+                
+            <img
+                src="src/img/desktop/image-transform.jpg"
+                alt="Ovo"
+                class="ovo"
+            />               
+        </section>
+            
+        <section  class="about"> 
+
+            <img
+                src="src/img/desktop/image-stand-out.jpg"
+                alt="Taça"
+                class="taca"
+            />
+
+            <article class="text">
+                <h2>Stand out to the right audience</h2>
+
+                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+                we’ll build and extend your brand in digital places.</p>
+
+                <a href="#" class="learn-more2">Learn more</a>
+            </article>
+        </section>
+        
+        <!-- Services -->
+        <section class="services">
+
+            <article class="services-text">
+                <img
+                    src="src/img/desktop/image-graphic-design.jpg"
+                    alt="Cereja"
+                    class="cereja"      
+                />
+
+                <div class="text green">
+                    <h2 class="blue">Graphic design</h2>
+                    
+                    <p>Great design makes you memorable. 
+                    We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>  
+                </div>
+            </article>
+        
+            <article class="services-text">
+                <img
+                    src="src/img/desktop/image-photography.jpg"
+                    alt="Tanjirina"
+                    class="tanjirina"
+                />
+
+                <div class="text blue">
+                    <h2 >Photography</h2>
+                    
+                    <p>Increase your credibility by getting the most stunning, 
+                    high-quality photos that improve your business image.</p> 
+                </div>
+            </article>
+        </section>
+        
+        <!-- Clients Testimonials -->
+        <section class="clients">
+            <h2>Clients Testimonials</h2>
+
+            <picture class="clients-text">       
+                <article class="client">
+                
+                    <img
+                        src="src/img/image-emily.jpg"
+                        alt="Emily"
+                        class="emily"
+                    />
+
+                        <p class="description">We put our trust in Sunnyside and they delivered, 
+                        making sure our needs were met and deadlines were always hit.</p>
+                        <h3 class="name">Emily R.</h3>
+                        <p class="profile">Marketing Director</p>
+                </article>
+                
+                <article class="client">
+                
+                    <img
+                        src="src/img/image-thomas.jpg"
+                        alt="Thomas"
+                        class="thomas"
+                    />
+                    
+                        <p class="description">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s 
+                        success made it a satisfying and enjoyable experience.</p>
+                        <h3 class="name">Thomas S.</h3> 
+                        <p class="profile">Chief Operating Officer</p>
+                </article>
+                
+                <article class="client">
+                
+                    <img
+                        src="src/img/image-jennie.jpg"
+                        alt="Jennie"
+                        class="jennie"
+                    />
+                
+                
+                    <p class="description">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+                    Highly recommended!</p>
+                    <h3 class="name">Jennie F.</h3>
+                    <p class="profile">Business Owner</p> 
+                </article>          
+            </picture>
+        </section> 
+        
+        <!-- Projects -->
+        <section class="projects">
+            <article>
+
+                <picture class="project">
+                    <img
+                        src="src/img/desktop/image-gallery-milkbottles.jpg"
+                        alt="Leite"
+                        class="leite"
+                    />
+
+                    <div role="link" class="project-info">
+                        <a href="#" class="project-title">Milk bottles</a>
+                    </div>
+                </picture>
+
+                <picture class="project">
+                    <img
+                        src="src/img/desktop/image-gallery-orange.jpg"
+                        alt="Laranja"
+                        class="laranja"
+                    />
+
+                    <div role="link" class="project-info">
+                        <a href="#" class="project-title">Orange</a>
+                    </div>
+                </picture>
+
+                <picture class="project">
+                    <img
+                        src="src/img/desktop/image-gallery-cone.jpg"
+                        alt="Cone"
+                        class="cone"
+                    />
+
+                    <div role="link" class="project-info">
+                        <a href="#" class="project-title">Cone</a>
+                    </div>
+                </picture>
+                
+                <picture class="project">
+                    <img
+                        src="src/img/desktop/image-gallery-sugarcubes.jpg"
+                        alt="Açucar"
+                        class="acucar"
+                    />
+                    <div role="link" class="project-info">
+                        <a href="#" class="project-title">Sugar cubes</a>
+                    </div>
+                </picture>
+            </article>
+        </section>  
+    </main>
+        
+    <footer>
+
+        <a href="Home#">
+            <img
+                src="src/img/logo.svg"
+                alt="Logo Sunnyside"
+                class="logo-footer"
+            />
+        </a>
+
+        <nav class="navbar-footer">
+            <ul>
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">Projects</a></li>     
+            </ul>
+        </nav>
+
+        <ul class="icon-socialmedia">
+            <li>
+                <a href="#"> 
+                    <i class="fa-brands fa-square-facebook icon-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"> 
+                    <i class="fa-brands fa-instagram icon-instagram"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"> 
+                    <i class="fa-brands fa-twitter icon-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"> 
+                    <i class="fa-brands fa-pinterest icon-pinterest"></i>
+                </a>
+            </li> 
+        </ul>
+    </footer>
+    <script src=landingPage.js></script>
+</body>
+</html>
